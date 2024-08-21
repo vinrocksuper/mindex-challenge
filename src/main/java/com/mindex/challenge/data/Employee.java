@@ -8,6 +8,7 @@ public class Employee {
     private String lastName;
     private String position;
     private String department;
+    private Compensation compensation;
     private List<Employee> directReports;
 
     public Employee() {
@@ -60,4 +61,8 @@ public class Employee {
     public void setDirectReports(List<Employee> directReports) {
         this.directReports = directReports;
     }
+
+    public Compensation getCompensation(){return compensation; }
+
+    public void setCompensation(Compensation compensation){ this.compensation = compensation; }
 }

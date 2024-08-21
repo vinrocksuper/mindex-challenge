@@ -11,6 +11,11 @@ public class Compensation {
         this.effectiveDate = effectiveDate != null ? effectiveDate : LocalDate.now();
     }
 
+    public Compensation(){
+        this.salary = 10000;
+        this.effectiveDate = LocalDate.now();
+    }
+
     public int getSalary() { return salary; }
     public LocalDate getEffectiveDate() { return effectiveDate; }
     public void setSalary(int salary) { this.salary = salary; }
